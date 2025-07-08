@@ -1,0 +1,72 @@
+[
+  {
+    "nome_vaga": "Desenvolvedor Front-end",
+    "empresa": "TechNova Solutions",
+    "localizacao": "São Paulo, SP",
+    "descricao": "Buscamos um desenvolvedor com experiência em React e boas práticas de UI/UX para atuar em projetos inovadores.",
+    "modalidade": "Remoto"
+  },
+  {
+    "nome_vaga": "Analista de Dados",
+    "empresa": "DataWise Analytics",
+    "localizacao": "Belo Horizonte, MG",
+    "descricao": "O profissional irá trabalhar com análise de grandes volumes de dados para apoiar a tomada de decisão estratégica.",
+    "modalidade": "Híbrido"
+  },
+  {
+    "nome_vaga": "Designer UI/UX",
+    "empresa": "PixelCraft Studio",
+    "localizacao": "Curitiba, PR",
+    "descricao": "Criar interfaces intuitivas e atrativas para aplicativos web e mobile em colaboração com o time de produto.",
+    "modalidade": "Presencial"
+  },
+  {
+    "nome_vaga": "Especialista em Segurança da Informação",
+    "empresa": "CyberShield Corp",
+    "localizacao": "Brasília, DF",
+    "descricao": "Atuar na proteção de dados sensíveis e criação de políticas de segurança para sistemas corporativos.",
+    "modalidade": "Híbrido"
+  },
+  {
+    "nome_vaga": "Estagiário em Marketing Digital",
+    "empresa": "StartUp Xperience",
+    "localizacao": "Recife, PE",
+    "descricao": "Auxiliar na criação de campanhas digitais, gestão de redes sociais e análise de métricas.",
+    "modalidade": "Remoto"
+  },
+  {
+    "nome_vaga": "Product Owner",
+    "empresa": "InovaTech",
+    "localizacao": "Porto Alegre, RS",
+    "descricao": "Responsável por priorizar o backlog e garantir entregas alinhadas às necessidades do cliente.",
+    "modalidade": "Presencial"
+  },
+  {
+    "nome_vaga": "Engenheiro de Software Back-end",
+    "empresa": "CloudHub",
+    "localizacao": "Campinas, SP",
+    "descricao": "Desenvolver e manter APIs escaláveis utilizando Node.js e bancos de dados relacionais.",
+    "modalidade": "Híbrido"
+  },
+  {
+    "nome_vaga": "Coordenador de RH",
+    "empresa": "Grupo Vitta",
+    "localizacao": "Fortaleza, CE",
+    "descricao": "Gerenciar processos de recrutamento, clima organizacional e estratégias de retenção de talentos.",
+    "modalidade": "Presencial"
+  },
+  {
+    "nome_vaga": "Cientista de Dados",
+    "empresa": "Neural Insights",
+    "localizacao": "Rio de Janeiro, RJ",
+    "descricao": "Construir modelos preditivos e interpretar resultados para orientar decisões de negócios.",
+    "modalidade": "Remoto"
+  },
+  {
+    "nome_vaga": "Técnico de Suporte TI",
+    "empresa": "InfoServ",
+    "localizacao": "Salvador, BA",
+    "descricao": "Prestar suporte técnico aos usuários, manutenção de equipamentos e redes locais.",
+    "modalidade": "Presencial"
+  }
+]

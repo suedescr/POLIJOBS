@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card_vagas {
+            width: 40%;
+            position: relative;
+        }
+
+        .card_vagas ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .card_vagas input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .vaga-item {
+            margin-bottom: 20px;
+        }
+
+        .vaga-item hr {
+            margin-top: 10px;
+        }
+    </style>
+    <title>PoliJobs</title>
+</head>
+<body>
+    <h1>PoliJobs</h1>
+    <div class="container">
+        <h3>Vagas Disponíveis</h3>
+        <div class="card_vagas">
+            <input type="text" id="filtro-vaga" placeholder="Procurar vaga">
+            <ul id="lista-vagas">
+                {% for vaga in vagas %}
+                <li class="vaga-item">
+                    <strong>{{ vaga.nome_vaga }}</strong><br>
+                    Empresa: {{ vaga.empresa }}<br>
+                    Local: {{ vaga.localizacao }}<br>
+                    Tipo: {{ vaga.modalidade }}<br>
+                    Descrição: {{ vaga.descricao }}
+                    <hr>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const inputFiltro = document.getElementById('filtro-vaga');
+        const listaVagas = document.getElementById('lista-vagas');
+        const vagas = listaVagas.getElementsByClassName('vaga-item');
+
+        inputFiltro.addEventListener('input', function () {
+            const termo = inputFiltro.value.toLowerCase();
+
+            for (let i = 0; i < vagas.length; i++) {
+                const vagaTexto = vagas[i].textContent.toLowerCase();
+
+                if (vagaTexto.includes(termo)) {
+                    vagas[i].style.display = 'block';
+                } else {
+                    vagas[i].style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
