@@ -20,17 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (name && pass) {
             localStorage.setItem("user", JSON.stringify({ name, pass }));
-            container.style.display = "block";
+            container.style.display = "flex";
             loginDiv.style.display = "none";
         }
     });
 
-    // Evento do botão de logout
     logoutBtn.addEventListener("click", function () {
         localStorage.removeItem("user");
         container.style.display = "none";
-        loginDiv.style.display = "block";
-        loginForm.reset(); // limpa os campos
+        loginDiv.style.display = "flex";
+        loginForm.reset();
     });
 
     // Botões de candidatura
@@ -41,5 +40,24 @@ document.addEventListener("DOMContentLoaded", function () {
                 btn.textContent = "Candidatura enviada";
             }
         });
+    });
+
+    // Filtro de vagas
+    const inputFiltro = document.getElementById('filtro-vaga');
+    const listaVagas = document.getElementById('lista-vagas');
+    const vagas = listaVagas.getElementsByClassName('vaga-item');
+
+    inputFiltro.addEventListener('input', function () {
+        const termo = inputFiltro.value.toLowerCase();
+
+        for (let i = 0; i < vagas.length; i++) {
+            const vagaTexto = vagas[i].textContent.toLowerCase();
+
+            if (vagaTexto.includes(termo)) {
+                vagas[i].style.display = 'block';
+            } else {
+                vagas[i].style.display = 'none';
+            }
+        }
     });
 });
