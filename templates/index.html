@@ -8,7 +8,16 @@
 </head>
 <body>
     <h1>PoliJobs</h1>
+    <div class="aut">
+        <form id="login-form">
+            <input type="text" id="name" placeholder="Usuário" required>
+            <input type="password" id="pass" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
     <div class="container">
+        <button id="logout-btn">Sair</button>
         <h3>Vagas Disponíveis</h3>
         <div class="card_vagas">
             <input type="text" id="filtro-vaga" placeholder="Procurar vaga">
@@ -19,7 +28,8 @@
                     Empresa: {{ vaga.empresa }}<br>
                     Local: {{ vaga.localizacao }}<br>
                     Tipo: {{ vaga.modalidade }}<br>
-                    Descrição: {{ vaga.descricao }}
+                    Descrição: {{ vaga.descricao }}<br>
+                    <button class="btn-candidatar">Se candidatar</button>
                     <hr>
                 </li>
                 {% endfor %}
