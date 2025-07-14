@@ -7,7 +7,7 @@ def read_json_db():
     with open('db.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data
-
+                
 @api.route("/vagas", methods=['GET'])
 def listar_vagas():
     vagas = read_json_db()
